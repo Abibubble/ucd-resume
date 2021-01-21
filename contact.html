@@ -14,10 +14,10 @@
     <script type="text/javascript">
         (function() {
             emailjs.init("user_FAumW3Tolu2bNfLR68sW0");
-            emailjs.send("service_3sipqt8", "rosie", {
-                name: "Aaron",
-                notes: "The project that I want is..."
-            })
+            // emailjs.send("service_3sipqt8", "rosie", {
+            //     name: "Aaron",
+            //     notes: "The project that I want is..."
+            // })
         })();
     </script>
 </head>
@@ -73,7 +73,7 @@
                 <h5 class="uppercase text-center">Let's work together</h5>
             </div>
             <div class="center-form">
-                <form>
+                <form onsubmit="return sendMail(this);">
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
                         required />
@@ -114,6 +114,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/sendemail.js"></script>
 </body>
 
 </html>
